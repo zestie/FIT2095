@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Some App</title>
+        <style>
+        body {
+            background-color:lightblue;
+        }
+        h1{
+            display: inline;
+        }
+        h2{
+            display: inline;
+        }
+        </style>
+    </head>
+    <body>
+        <form action="/newtask" method="POST">
+            <a href="/"><H1>Home</H1></a>
+            <a href="/listTask"><H1>List Tasks</H1></a><br><br>
+            <h2>Task Name &nbsp;</h2><input type="text" name="tName" id="tName"><br>
+            <h2>Task Due &nbsp;</h2><input type="text" name="tDue" id="tDue"><br>
+            <h2>Task Desc &nbsp;</h2><input type="text" name="tDesc" id="tDesc"><br><br><br>      
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

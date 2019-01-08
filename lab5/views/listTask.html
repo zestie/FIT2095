@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-color: lightblue;
+    }
+    h1 {
+        display: inline;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+    ​<a href="/"><H1>Home</H1></a>
+    <a href="/newtask"><H1>Add New Task</H1></a><br><br><br>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Due Date</th>
+            <th>Discription</th>
+        </tr>
+        <% for ( var i =0; i< lab5Db.length;i++){ %>
+        <tr>
+            <td>
+                <%= lab5Db[i].tName %>
+            </td>
+            <td>
+                <%= lab5Db[i].tDue %>
+            </td>
+            <td>
+                <%= lab5Db[i].tDesc %>
+            </td>
+        </tr>
+        <% }%>
+    </table>
+</body>
+</html>

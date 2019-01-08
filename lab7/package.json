@@ -1,0 +1,25 @@
+{
+  "name": "lab6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.1.6",
+    "mongoose": "^5.2.16",
+    "morgan": "^1.9.1",
+    "node": "^10.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

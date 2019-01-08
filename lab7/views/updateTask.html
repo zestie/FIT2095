@@ -1,0 +1,20 @@
+<html>
+        <head>
+                <link rel="stylesheet" href="style1.css">
+        </head>
+<body>
+    <h1>Update Task</h1></br>
+    <h2>
+        <a href="http://localhost:8080"> Home </a>  &nbsp; 
+            <a href="http://localhost:8080/listTasks">list Tasks</a>&nbsp; 
+            <a href="http://localhost:8080/indexw4">Home</a>&nbsp; 
+            <a href = "http://localhost:8080/deleteTask"> Delete task </a> &nbsp;
+    </h2>
+    <form action="/updateTaskData" method="POST">
+        <p>Task ID: </p> <input type="text" method="POST" name = "taskId" /> </br>
+         <p>New Task: </p> <input type="text" method="POST" name = "newTask"/> </br>
+     
+        <input type = "submit" value = "Submit"/> </br>
+    </form>
+</body>
+</html>

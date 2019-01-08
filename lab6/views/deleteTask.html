@@ -1,0 +1,24 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Delete Task</h1><br>
+    <h2>
+        <a href="/">Home Page</a>
+        <a href="/newTask">New Task</a>
+        <a href="/listTask">List Task</a>
+        <a href="/updateTask">Update Task</a>
+        <a href="/deleteTask">Delete Task</a>
+    </h2><br>
+    <form action="/deletetaskdata" method="POST">
+        Task ID <input type="number" method="POST" name="taskID" /> <br>
+        <input type="submit" value="Submit" /> <br>
+    </form>
+    <form action="/deleteAll" method="POST">
+        <h3>To Delete All Completed tasks</h3>
+        Click below "Delete all COMPLETED" tasks
+        <input type="submit" value="Delete Completed" /> <br>
+    </form>
+</body>
+</html>

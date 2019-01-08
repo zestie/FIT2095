@@ -1,0 +1,20 @@
+<html>
+<head>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <h1>Update Task</h1><br>
+        <h2>
+                <a href="/">Home Page</a>
+                <a href="/newTask">New Task</a>
+                <a href="/listTask">List Task</a>
+                <a href="/updateTask">Update Task</a>
+                <a href="/deleteTask">Delete Task</a>
+        </h2><br>
+        <form action="/updatetaskdata" method="POST">
+                Task ID <input type="number" method="POST" name="taskId" /> <br>
+                Task Status <input type="text" method="POST" name="newtstatus" /> <br>
+                <input type="submit" value="Submit" /> <br>
+        </form>
+</body>
+</html>

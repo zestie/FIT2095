@@ -1,0 +1,38 @@
+<html>
+    <head>
+    <title> Add new task </title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
+    </head>
+        <body>
+            <h2>
+                <a href = "http://localhost:8080"> Home </a>  &nbsp;
+                <a href = "http://localhost:8080/deleteTask"> Delete task </a> &nbsp;
+                <a href = "http://localhost:8080/updateTask"> Update task </a> &nbsp;
+            </h2>
+            <form action = '/addTask' method ='POST'>
+                <h1>Please enter data</h1>
+                <label>Enter Name: </label>
+                <input type = "text" name = "name"/>
+            </br>
+                <label> Assign To </label>
+                <input type = "text" name = "assign" />
+            </br>
+                <label> Enter Due Date </label>
+                <input type= "date" name = "date" />
+            </br>
+                <label> Enter Task Status </label>
+                <input type= "text" name = "status" />
+             </br>
+                 <label> Enter Task description: </label>
+                 <input type= "text" name = "desc" />
+             </br>
+                <button> submit <button />
+        
+              </form>
+              <div id = "display"></div>
+
+        
+        </body>
+
+</html>

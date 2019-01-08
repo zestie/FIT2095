@@ -1,0 +1,9 @@
+body {
+    background-color:lightblue;
+}
+h2{
+    display: inline;
+}
+table, th, td {
+    border: 1px solid black;
+}

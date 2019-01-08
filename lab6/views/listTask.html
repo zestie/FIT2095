@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>List Task</h1><br>
+    <h2>
+        <a href="/">Home Page</a>
+        <a href="/newTask">New Task</a>
+        <a href="/listTask">List Task</a>
+        <a href="/updateTask">Update Task</a>
+        <a href="/deleteTask">Delete Task</a>
+    </h2><br>
+    <table>
+        <tr>
+            <td>Task ID</td>
+            <td>Name</td>
+            <td>Assign To</td>
+            <td>Due Date</td>
+            <td>Task Status</td>
+            <td>Description</td>
+        </tr>
+        <% for ( var i = 0; i< taskDb.length;i++){ %>
+            <tr>
+                <td>
+                    <%= taskDb[i].id %>
+                </td>
+                <td>
+                    <%= taskDb[i].taskName %>
+                </td>
+                <td>
+                    <%= taskDb[i].assignTo %>
+                </td>
+                <td>
+                    <%= taskDb[i].taskDue %>
+                </td>
+                <td>
+                    <%= taskDb[i].taskStatus %>
+                </td>
+                <td>
+                    <%= taskDb[i].taskDesc %>
+                </td>
+            </tr>
+        <% }%>
+    </table>
+</body>
+</html>

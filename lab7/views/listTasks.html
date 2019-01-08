@@ -1,0 +1,42 @@
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="style1.css">
+    </head>
+
+<body>
+    <h2>
+        <a href="http://localhost:8080"> Home </a> &nbsp;
+        <a href = "http://localhost:8080/addTask"> Add new task </a>&nbsp;
+        <a href="http://localhost:8080/deleteAll"> Delete all Tasks? </a> &nbsp;
+        <a href = "http://localhost:8080/deleteTask"> Delete task </a> &nbsp;
+        <a href = "http://localhost:8080/UpdateTask"> Update task </a> &nbsp;
+
+   </h2>
+    </br>
+    <h3>The tasks are:</h3>
+        <table style="width:100%">
+            <tr>
+                <td>Task ID: </td>
+
+                <td>Name  </td>
+                <td>Assign To: </td>
+                <td>Due Date </td>
+                <td>Task status </td>
+                <td>Task description </td>
+            </tr>
+            <% for (var i = 0;i<myDB2.length;i++) { %>
+                <tr>
+                    <td><%=myDB2[i]._id%></td>
+                    <td><%=myDB2[i].name%></td>
+                    <td><%=myDB2[i].assign_To%></td>
+                    <td><%=myDB2[i].Due_Date%></td>
+                    <td><%=myDB2[i].task_Status%></td>
+                    <td><%=myDB2[i].Desc%></td>
+                </tr>
+
+                <%} %>
+            </table>
+    
+</body>
+
+</html>

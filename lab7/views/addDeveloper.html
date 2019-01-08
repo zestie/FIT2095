@@ -1,0 +1,51 @@
+<html>
+    <head>
+    <title> Add new Developer </title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
+    </head>
+        <body>
+
+                <h1> Welcome <%= username%> </h1>
+                
+            <h2>
+                <a href = "http://localhost:8080"> Home </a>  &nbsp; 
+                <a href = "http://localhost:8080/listTasks"> list Tasks </a>&nbsp; 
+                <a href = "http://localhost:8080/listDevelopers"> list Developers </a>&nbsp; 
+                <a href = "http://localhost:8080/deleteTask"> Delete task </a> &nbsp;
+                <a href = "http://localhost:8080/updateTask"> Update task </a> &nbsp;
+            </h2>
+            <form action = '/addDeveloper' method ='POST'>
+                <h1>Please enter information</h1>
+                <label>First Name: </label>
+                <input type = "text" name = "firstName"/>
+            </br>
+                <label> Last Name: </label>
+                <input type = "text" name = "secondName" />
+            </br>
+                <label> level: </label>
+                <input type= "text" name = "level" />
+            </br>
+                <h2> Please enter address information </h2> 
+                <label> State:  </label>
+                <input type= "text" name = "state" />
+             </br> 
+                <label> Suburb: </label>
+                <input type = "text" name = "suburb"/>
+            </br> 
+                <label> Street: </label>
+                <input type = "text" name = "street"/>
+            </br> 
+                <label> Unit: </label>
+                <input type = "text" name = "unit"/>
+            </br> 
+
+                <button> submit <button />
+        
+              </form>
+              <div id = "display"></div>
+
+        
+        </body>
+
+</html>
